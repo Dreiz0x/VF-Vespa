@@ -4,12 +4,12 @@ import android.os.Bundle
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
 import androidx.activity.enableEdgeToEdge
-import androidx.compose.material3.MaterialTheme
 import androidx.compose.runtime.LaunchedEffect
 import androidx.navigation.compose.rememberNavController
 import dagger.hilt.android.AndroidEntryPoint
 import dev.vskelk.cdf.app.navigation.AppNavGraph
 import dev.vskelk.cdf.app.work.PendingSyncScheduler
+import dev.vskelk.cdf.core.common.ui.theme.VespaTheme
 import dev.vskelk.cdf.core.database.di.DatabaseSeeder
 import javax.inject.Inject
 
@@ -24,11 +24,11 @@ class MainActivity : ComponentActivity() {
         enableEdgeToEdge()
         setContent {
             val navController = rememberNavController()
-            LaunchedEffect(Unit) { 
+            LaunchedEffect(Unit) {
                 databaseSeeder.seed()
-                pendingSyncScheduler.schedulePeriodic() 
+                pendingSyncScheduler.schedulePeriodic()
             }
-            MaterialTheme {
+            VespaTheme {
                 AppNavGraph(navController = navController)
             }
         }

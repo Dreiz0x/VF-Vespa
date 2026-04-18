@@ -1,0 +1,214 @@
+To honour the JVM settings for this build a single-use Daemon process will be forked. For more on this, please refer to https://docs.gradle.org/8.10.2/userguide/gradle_daemon.html#sec:disabling_the_daemon in the Gradle documentation.
+Daemon will be stopped at the end of the build 
+> Task :app:preBuild UP-TO-DATE
+> Task :app:preDebugBuild UP-TO-DATE
+> Task :app:mergeDebugNativeDebugMetadata NO-SOURCE
+> Task :app:checkKotlinGradlePluginConfigurationErrors SKIPPED
+> Task :app:generateDebugBuildConfig UP-TO-DATE
+> Task :domain:preBuild UP-TO-DATE
+> Task :domain:preDebugBuild UP-TO-DATE
+> Task :domain:writeDebugAarMetadata UP-TO-DATE
+> Task :core:common:preBuild UP-TO-DATE
+> Task :core:common:preDebugBuild UP-TO-DATE
+> Task :core:common:writeDebugAarMetadata UP-TO-DATE
+> Task :core:database:preBuild UP-TO-DATE
+> Task :core:database:preDebugBuild UP-TO-DATE
+> Task :core:database:writeDebugAarMetadata UP-TO-DATE
+> Task :core:datastore:preBuild UP-TO-DATE
+> Task :core:datastore:preDebugBuild UP-TO-DATE
+> Task :core:datastore:writeDebugAarMetadata UP-TO-DATE
+> Task :core:network:preBuild UP-TO-DATE
+> Task :core:network:preDebugBuild UP-TO-DATE
+> Task :core:network:writeDebugAarMetadata UP-TO-DATE
+> Task :data:repository:preBuild UP-TO-DATE
+> Task :data:repository:preDebugBuild UP-TO-DATE
+> Task :data:repository:writeDebugAarMetadata UP-TO-DATE
+> Task :feature:chaos:preBuild UP-TO-DATE
+> Task :feature:chaos:preDebugBuild UP-TO-DATE
+> Task :feature:chaos:writeDebugAarMetadata UP-TO-DATE
+> Task :feature:diagnostico:preBuild UP-TO-DATE
+> Task :feature:diagnostico:preDebugBuild UP-TO-DATE
+> Task :feature:diagnostico:writeDebugAarMetadata UP-TO-DATE
+> Task :feature:entrevista:preBuild UP-TO-DATE
+> Task :feature:entrevista:preDebugBuild UP-TO-DATE
+> Task :feature:entrevista:writeDebugAarMetadata UP-TO-DATE
+> Task :feature:main:preBuild UP-TO-DATE
+> Task :feature:main:preDebugBuild UP-TO-DATE
+> Task :feature:main:writeDebugAarMetadata UP-TO-DATE
+> Task :feature:simulador:preBuild UP-TO-DATE
+> Task :feature:simulador:preDebugBuild UP-TO-DATE
+> Task :feature:simulador:writeDebugAarMetadata UP-TO-DATE
+> Task :app:checkDebugAarMetadata UP-TO-DATE
+> Task :app:generateDebugResValues UP-TO-DATE
+> Task :domain:generateDebugResValues UP-TO-DATE
+> Task :domain:generateDebugResources UP-TO-DATE
+> Task :domain:packageDebugResources UP-TO-DATE
+> Task :core:common:generateDebugResValues UP-TO-DATE
+> Task :core:common:generateDebugResources UP-TO-DATE
+> Task :core:common:packageDebugResources UP-TO-DATE
+> Task :core:database:generateDebugResValues UP-TO-DATE
+> Task :core:database:generateDebugResources UP-TO-DATE
+> Task :core:database:packageDebugResources UP-TO-DATE
+> Task :core:datastore:generateDebugResValues UP-TO-DATE
+> Task :core:datastore:generateDebugResources UP-TO-DATE
+> Task :core:datastore:packageDebugResources UP-TO-DATE
+> Task :core:network:generateDebugResValues UP-TO-DATE
+> Task :core:network:generateDebugResources UP-TO-DATE
+> Task :core:network:packageDebugResources UP-TO-DATE
+> Task :data:repository:generateDebugResValues UP-TO-DATE
+> Task :data:repository:generateDebugResources UP-TO-DATE
+> Task :data:repository:packageDebugResources UP-TO-DATE
+> Task :feature:chaos:generateDebugResValues UP-TO-DATE
+> Task :feature:chaos:generateDebugResources UP-TO-DATE
+> Task :feature:chaos:packageDebugResources UP-TO-DATE
+> Task :feature:diagnostico:generateDebugResValues UP-TO-DATE
+> Task :feature:diagnostico:generateDebugResources UP-TO-DATE
+> Task :feature:diagnostico:packageDebugResources UP-TO-DATE
+> Task :feature:entrevista:generateDebugResValues UP-TO-DATE
+> Task :feature:entrevista:generateDebugResources UP-TO-DATE
+> Task :feature:entrevista:packageDebugResources UP-TO-DATE
+> Task :feature:main:generateDebugResValues UP-TO-DATE
+> Task :feature:main:generateDebugResources UP-TO-DATE
+> Task :feature:main:packageDebugResources UP-TO-DATE
+> Task :feature:simulador:generateDebugResValues UP-TO-DATE
+> Task :feature:simulador:generateDebugResources UP-TO-DATE
+> Task :feature:simulador:packageDebugResources UP-TO-DATE
+> Task :app:mapDebugSourceSetPaths UP-TO-DATE
+> Task :app:generateDebugResources UP-TO-DATE
+> Task :app:mergeDebugResources UP-TO-DATE
+> Task :app:packageDebugResources UP-TO-DATE
+> Task :app:parseDebugLocalResources UP-TO-DATE
+> Task :app:createDebugCompatibleScreenManifests UP-TO-DATE
+> Task :app:extractDeepLinksDebug UP-TO-DATE
+> Task :domain:extractDeepLinksDebug UP-TO-DATE
+> Task :domain:processDebugManifest UP-TO-DATE
+> Task :core:common:extractDeepLinksDebug UP-TO-DATE
+> Task :core:common:processDebugManifest UP-TO-DATE
+> Task :core:database:extractDeepLinksDebug UP-TO-DATE
+> Task :core:database:processDebugManifest UP-TO-DATE
+> Task :core:datastore:extractDeepLinksDebug UP-TO-DATE
+> Task :core:datastore:processDebugManifest UP-TO-DATE
+> Task :core:network:extractDeepLinksDebug UP-TO-DATE
+> Task :core:network:processDebugManifest UP-TO-DATE
+> Task :data:repository:extractDeepLinksDebug UP-TO-DATE
+> Task :data:repository:processDebugManifest UP-TO-DATE
+> Task :feature:chaos:extractDeepLinksDebug UP-TO-DATE
+> Task :feature:chaos:processDebugManifest UP-TO-DATE
+> Task :feature:diagnostico:extractDeepLinksDebug UP-TO-DATE
+> Task :feature:diagnostico:processDebugManifest UP-TO-DATE
+> Task :feature:entrevista:extractDeepLinksDebug UP-TO-DATE
+> Task :feature:entrevista:processDebugManifest UP-TO-DATE
+> Task :feature:main:extractDeepLinksDebug UP-TO-DATE
+> Task :feature:main:processDebugManifest UP-TO-DATE
+> Task :feature:simulador:extractDeepLinksDebug UP-TO-DATE
+> Task :feature:simulador:processDebugManifest UP-TO-DATE
+> Task :app:processDebugMainManifest UP-TO-DATE
+> Task :app:processDebugManifest UP-TO-DATE
+> Task :app:processDebugManifestForPackage UP-TO-DATE
+> Task :domain:compileDebugLibraryResources UP-TO-DATE
+> Task :domain:parseDebugLocalResources UP-TO-DATE
+> Task :domain:generateDebugRFile UP-TO-DATE
+> Task :core:common:compileDebugLibraryResources UP-TO-DATE
+> Task :core:common:parseDebugLocalResources UP-TO-DATE
+> Task :core:common:generateDebugRFile UP-TO-DATE
+> Task :core:database:compileDebugLibraryResources UP-TO-DATE
+> Task :core:database:parseDebugLocalResources UP-TO-DATE
+> Task :core:database:generateDebugRFile UP-TO-DATE
+> Task :core:datastore:compileDebugLibraryResources UP-TO-DATE
+> Task :core:datastore:parseDebugLocalResources UP-TO-DATE
+> Task :core:datastore:generateDebugRFile UP-TO-DATE
+> Task :core:network:compileDebugLibraryResources UP-TO-DATE
+> Task :core:network:parseDebugLocalResources UP-TO-DATE
+> Task :core:network:generateDebugRFile UP-TO-DATE
+> Task :data:repository:compileDebugLibraryResources UP-TO-DATE
+> Task :data:repository:parseDebugLocalResources UP-TO-DATE
+> Task :data:repository:generateDebugRFile UP-TO-DATE
+> Task :feature:chaos:compileDebugLibraryResources UP-TO-DATE
+> Task :feature:chaos:parseDebugLocalResources UP-TO-DATE
+> Task :feature:chaos:generateDebugRFile UP-TO-DATE
+> Task :feature:diagnostico:compileDebugLibraryResources UP-TO-DATE
+> Task :feature:diagnostico:parseDebugLocalResources UP-TO-DATE
+> Task :feature:diagnostico:generateDebugRFile UP-TO-DATE
+> Task :feature:entrevista:compileDebugLibraryResources UP-TO-DATE
+> Task :feature:entrevista:parseDebugLocalResources UP-TO-DATE
+> Task :feature:entrevista:generateDebugRFile UP-TO-DATE
+> Task :feature:main:compileDebugLibraryResources UP-TO-DATE
+> Task :feature:main:parseDebugLocalResources UP-TO-DATE
+> Task :feature:main:generateDebugRFile UP-TO-DATE
+> Task :feature:simulador:compileDebugLibraryResources UP-TO-DATE
+> Task :feature:simulador:parseDebugLocalResources UP-TO-DATE
+> Task :feature:simulador:generateDebugRFile UP-TO-DATE
+> Task :app:processDebugResources UP-TO-DATE
+> Task :domain:checkKotlinGradlePluginConfigurationErrors SKIPPED
+> Task :core:common:checkKotlinGradlePluginConfigurationErrors SKIPPED
+> Task :core:common:kspDebugKotlin UP-TO-DATE
+> Task :core:common:compileDebugKotlin UP-TO-DATE
+> Task :core:common:javaPreCompileDebug UP-TO-DATE
+> Task :core:common:compileDebugJavaWithJavac UP-TO-DATE
+> Task :core:common:transformDebugClassesWithAsm UP-TO-DATE
+> Task :core:common:bundleLibCompileToJarDebug UP-TO-DATE
+> Task :domain:kspDebugKotlin UP-TO-DATE
+> Task :domain:compileDebugKotlin UP-TO-DATE
+> Task :domain:javaPreCompileDebug UP-TO-DATE
+> Task :domain:compileDebugJavaWithJavac UP-TO-DATE
+> Task :core:common:bundleLibRuntimeToJarDebug UP-TO-DATE
+> Task :domain:transformDebugClassesWithAsm UP-TO-DATE
+> Task :domain:bundleLibCompileToJarDebug UP-TO-DATE
+> Task :domain:bundleLibRuntimeToJarDebug UP-TO-DATE
+> Task :core:database:checkKotlinGradlePluginConfigurationErrors SKIPPED
+> Task :core:database:kspDebugKotlin UP-TO-DATE
+> Task :core:database:compileDebugKotlin UP-TO-DATE
+> Task :core:database:javaPreCompileDebug UP-TO-DATE
+> Task :core:database:compileDebugJavaWithJavac UP-TO-DATE
+> Task :core:database:transformDebugClassesWithAsm UP-TO-DATE
+> Task :core:database:bundleLibCompileToJarDebug UP-TO-DATE
+> Task :core:datastore:checkKotlinGradlePluginConfigurationErrors SKIPPED
+> Task :core:datastore:extractDebugProto UP-TO-DATE
+> Task :core:common:processDebugJavaRes UP-TO-DATE
+> Task :core:common:createFullJarDebug UP-TO-DATE
+> Task :core:datastore:extractIncludeDebugProto UP-TO-DATE
+> Task :core:datastore:extractProto UP-TO-DATE
+> Task :core:datastore:generateDebugProto UP-TO-DATE
+> Task :core:datastore:kspDebugKotlin
+> Task :core:datastore:compileDebugKotlin
+> Task :core:datastore:javaPreCompileDebug
+> Task :core:datastore:compileDebugJavaWithJavac
+> Task :core:datastore:transformDebugClassesWithAsm
+> Task :core:datastore:bundleLibCompileToJarDebug
+> Task :core:network:checkKotlinGradlePluginConfigurationErrors SKIPPED
+> Task :core:network:generateDebugBuildConfig
+> Task :core:network:kspDebugKotlin
+> Task :core:network:compileDebugKotlin
+> Task :core:network:javaPreCompileDebug
+> Task :core:network:compileDebugJavaWithJavac
+> Task :core:network:transformDebugClassesWithAsm
+> Task :core:network:bundleLibCompileToJarDebug
+> Task :core:database:bundleLibRuntimeToJarDebug
+> Task :core:datastore:bundleLibRuntimeToJarDebug
+> Task :core:network:bundleLibRuntimeToJarDebug
+> Task :data:repository:checkKotlinGradlePluginConfigurationErrors SKIPPED
+> Task :data:repository:kspDebugKotlin
+
+> Task :data:repository:compileDebugKotlin FAILED
+e: file:///home/ubuntu/vespa_new/Vespa/data/repository/src/main/java/dev/vskelk/cdf/data/repository/repository/Repositories.kt:183:30 Cannot access 'GeneratedMessageLite' which is a supertype of 'UserPreferences'. Check your module classpath for missing or conflicting dependencies.
+e: file:///home/ubuntu/vespa_new/Vespa/data/repository/src/main/java/dev/vskelk/cdf/data/repository/repository/Repositories.kt:183:30 Cannot access 'MessageLiteOrBuilder' which is a supertype of 'UserPreferences'. Check your module classpath for missing or conflicting dependencies.
+e: file:///home/ubuntu/vespa_new/Vespa/data/repository/src/main/java/dev/vskelk/cdf/data/repository/repository/Repositories.kt:184:35 Cannot access 'GeneratedMessageLite' which is a supertype of 'UserPreferences'. Check your module classpath for missing or conflicting dependencies.
+e: file:///home/ubuntu/vespa_new/Vespa/data/repository/src/main/java/dev/vskelk/cdf/data/repository/repository/Repositories.kt:184:35 Cannot access 'MessageLiteOrBuilder' which is a supertype of 'UserPreferences'. Check your module classpath for missing or conflicting dependencies.
+e: file:///home/ubuntu/vespa_new/Vespa/data/repository/src/main/java/dev/vskelk/cdf/data/repository/repository/Repositories.kt:185:40 Cannot access 'GeneratedMessageLite' which is a supertype of 'UserPreferences'. Check your module classpath for missing or conflicting dependencies.
+e: file:///home/ubuntu/vespa_new/Vespa/data/repository/src/main/java/dev/vskelk/cdf/data/repository/repository/Repositories.kt:185:40 Cannot access 'MessageLiteOrBuilder' which is a supertype of 'UserPreferences'. Check your module classpath for missing or conflicting dependencies.
+
+FAILURE: Build failed with an exception.
+
+* What went wrong:
+Execution failed for task ':data:repository:compileDebugKotlin'.
+> A failure occurred while executing org.jetbrains.kotlin.compilerRunner.GradleCompilerRunnerWithWorkers$GradleKotlinCompilerWorkAction
+   > Compilation error. See log for more details
+
+* Try:
+> Run with --stacktrace option to get the stack trace.
+> Run with --info or --debug option to get more log output.
+> Run with --scan to get full insights.
+> Get more help at https://help.gradle.org.
+
+BUILD FAILED in 1m 8s
+157 actionable tasks: 18 executed, 139 up-to-date

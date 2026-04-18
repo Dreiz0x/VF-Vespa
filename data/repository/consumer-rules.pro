@@ -1,0 +1,1 @@
+-keep class dev.vskelk.cdf.data.repository.** { *; }

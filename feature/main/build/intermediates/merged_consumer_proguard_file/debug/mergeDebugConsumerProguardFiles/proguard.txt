@@ -1,0 +1,2 @@
+-keep,allowobfuscation,allowshrinking class dev.vskelk.cdf.feature.main.MainViewModel
+-keep,allowobfuscation,allowshrinking class dev.vskelk.cdf.feature.main.MainViewModel

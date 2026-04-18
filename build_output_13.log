@@ -1,0 +1,28 @@
+To honour the JVM settings for this build a single-use Daemon process will be forked. For more on this, please refer to https://docs.gradle.org/8.10.2/userguide/gradle_daemon.html#sec:disabling_the_daemon in the Gradle documentation.
+Daemon will be stopped at the end of the build 
+
+> Configure project :data:repository
+e: file:///home/ubuntu/vespa_new/Vespa/data/repository/build.gradle.kts:24:34: Unresolved reference. None of the following candidates is applicable because of receiver type mismatch: 
+public val Project.kotlin: KotlinAndroidProjectExtension defined in org.gradle.kotlin.dsl
+
+FAILURE: Build failed with an exception.
+
+* Where:
+Build file '/home/ubuntu/vespa_new/Vespa/data/repository/build.gradle.kts' line: 24
+
+* What went wrong:
+Script compilation error:
+
+  Line 24:     implementation(libs.protobuf.kotlin.lite)
+                                            ^ Unresolved reference. None of the following candidates is applicable because of receiver type mismatch: 
+                                                public val Project.kotlin: KotlinAndroidProjectExtension defined in org.gradle.kotlin.dsl
+
+1 error
+
+* Try:
+> Run with --stacktrace option to get the stack trace.
+> Run with --info or --debug option to get more log output.
+> Run with --scan to get full insights.
+> Get more help at https://help.gradle.org.
+
+BUILD FAILED in 34s

@@ -1,0 +1,98 @@
+name: vespa-android-ci
+
+on:
+  push:
+    branches: [main, master, develop, dev]
+  pull_request:
+    branches: ["**"]
+  workflow_dispatch:
+
+concurrency:
+  group: vespa-android-ci-${{ github.ref }}
+  cancel-in-progress: true
+
+permissions:
+  contents: read
+
+env:
+  JAVA_VERSION: "17"
+  ANDROID_API_LEVEL: "35"
+  ANDROID_BUILD_TOOLS: "35.0.0"
+  GRADLE_OPTS: >-
+    -Dorg.gradle.jvmargs="-Xmx4g -Dfile.encoding=UTF-8"
+    -Dkotlin.incremental=false
+    -Dorg.gradle.configuration-cache=false
+
+jobs:
+  build:
+    name: Build · Lint · Test
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up JDK
+        uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: ${{ env.JAVA_VERSION }}
+
+      - name: Set up Android SDK
+        uses: android-actions/setup-android@v3
+
+      - name: Accept SDK licenses
+        shell: bash
+        run: yes | sdkmanager --licenses > /dev/null || true
+
+      - name: Install Android platform packages
+        shell: bash
+        run: |
+          sdkmanager \
+            "platform-tools" \
+            "platforms;android-${ANDROID_API_LEVEL}" \
+            "build-tools;${ANDROID_BUILD_TOOLS}"
+
+      - name: Set up Gradle
+        uses: gradle/actions/setup-gradle@v4
+        with:
+          cache-read-only: false
+
+      - name: Grant execute permission
+        run: chmod +x ./gradlew
+
+      - name: Verify Gradle wrapper
+        uses: gradle/wrapper-validation-action@v2
+
+      - name: Spotless check
+        run: ./gradlew spotlessCheck --stacktrace --no-daemon
+
+      - name: Detekt
+        run: ./gradlew detekt --stacktrace --no-daemon
+
+      - name: Unit tests
+        run: ./gradlew testDebugUnitTest --stacktrace --no-daemon
+
+      - name: Assemble debug
+        run: ./gradlew assembleDebug --stacktrace --no-daemon
+
+      - name: Upload debug APKs
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: vespa-debug-apks
+          path: "**/build/outputs/apk/debug/*.apk"
+          if-no-files-found: warn
+          retention-days: 7
+
+      - name: Upload reports
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: vespa-build-reports
+          path: |
+            **/build/reports/
+            **/build/test-results/
+          if-no-files-found: warn
+          retention-days: 7

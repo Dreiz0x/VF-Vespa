@@ -1,0 +1,42 @@
+package dev.vskelk.cdf.core.network.resilience;
+
+import dagger.internal.DaggerGenerated;
+import dagger.internal.Factory;
+import dagger.internal.QualifierMetadata;
+import dagger.internal.ScopeMetadata;
+import javax.annotation.processing.Generated;
+
+@ScopeMetadata("javax.inject.Singleton")
+@QualifierMetadata
+@DaggerGenerated
+@Generated(
+    value = "dagger.internal.codegen.ComponentProcessor",
+    comments = "https://dagger.dev"
+)
+@SuppressWarnings({
+    "unchecked",
+    "rawtypes",
+    "KotlinInternal",
+    "KotlinInternalInJava",
+    "cast",
+    "deprecation",
+    "nullness:initialization.field.uninitialized"
+})
+public final class CircuitBreaker_Factory implements Factory<CircuitBreaker> {
+  @Override
+  public CircuitBreaker get() {
+    return newInstance();
+  }
+
+  public static CircuitBreaker_Factory create() {
+    return InstanceHolder.INSTANCE;
+  }
+
+  public static CircuitBreaker newInstance() {
+    return new CircuitBreaker();
+  }
+
+  private static final class InstanceHolder {
+    static final CircuitBreaker_Factory INSTANCE = new CircuitBreaker_Factory();
+  }
+}

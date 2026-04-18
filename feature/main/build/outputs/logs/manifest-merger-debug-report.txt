@@ -1,0 +1,16 @@
+-- Merging decision tree log ---
+manifest
+ADDED from /home/ubuntu/vespa_new/Vespa/feature/main/build/intermediates/tmp/ProcessLibraryManifest/debug/tempAndroidManifest3603386544730126272.xml:2:13-83
+INJECTED from /home/ubuntu/vespa_new/Vespa/feature/main/build/intermediates/tmp/ProcessLibraryManifest/debug/tempAndroidManifest3603386544730126272.xml:2:13-83
+	package
+		INJECTED from /home/ubuntu/vespa_new/Vespa/feature/main/build/intermediates/tmp/ProcessLibraryManifest/debug/tempAndroidManifest3603386544730126272.xml
+	xmlns:android
+		ADDED from /home/ubuntu/vespa_new/Vespa/feature/main/build/intermediates/tmp/ProcessLibraryManifest/debug/tempAndroidManifest3603386544730126272.xml:2:23-81
+uses-sdk
+INJECTED from /home/ubuntu/vespa_new/Vespa/feature/main/build/intermediates/tmp/ProcessLibraryManifest/debug/tempAndroidManifest3603386544730126272.xml reason: use-sdk injection requested
+INJECTED from /home/ubuntu/vespa_new/Vespa/feature/main/build/intermediates/tmp/ProcessLibraryManifest/debug/tempAndroidManifest3603386544730126272.xml
+INJECTED from /home/ubuntu/vespa_new/Vespa/feature/main/build/intermediates/tmp/ProcessLibraryManifest/debug/tempAndroidManifest3603386544730126272.xml
+	android:targetSdkVersion
+		INJECTED from /home/ubuntu/vespa_new/Vespa/feature/main/build/intermediates/tmp/ProcessLibraryManifest/debug/tempAndroidManifest3603386544730126272.xml
+	android:minSdkVersion
+		INJECTED from /home/ubuntu/vespa_new/Vespa/feature/main/build/intermediates/tmp/ProcessLibraryManifest/debug/tempAndroidManifest3603386544730126272.xml

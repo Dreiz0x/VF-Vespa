@@ -1,0 +1,2 @@
+-keep,allowobfuscation,allowshrinking class dev.vskelk.cdf.feature.chaos.ChaosViewModel
+-keep,allowobfuscation,allowshrinking class dev.vskelk.cdf.feature.chaos.ChaosViewModel

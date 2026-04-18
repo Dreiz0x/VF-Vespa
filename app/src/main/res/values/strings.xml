@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Vespa</string>
+    <string name="app_author">VSkel-K</string>
+    <!-- Pins de certificado — reemplazar con valores reales antes de release -->
+    <!-- <string name="anthropic_pin_1">sha256/AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</string> -->
+    <!-- <string name="anthropic_pin_2">sha256/BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB=</string> -->
+</resources>

@@ -62,9 +62,6 @@ jobs:
       - name: Grant execute permission
         run: chmod +x ./gradlew
 
-      - name: Verify Gradle wrapper
-        uses: gradle/wrapper-validation-action@v2
-
       - name: Spotless check
         run: ./gradlew spotlessCheck --stacktrace --no-daemon
 

@@ -10,15 +10,15 @@ import org.junit.runner.RunWith
 
 @RunWith(AndroidJUnit4::class)
 class BaselineProfileGenerator {
-
     @get:Rule
     val baselineProfileRule = BaselineProfileRule()
 
     @Test
-    fun generate() = baselineProfileRule.collect(packageName = "dev.vskelk.cdf") {
-        val device = UiDevice.getInstance(InstrumentationRegistry.getInstrumentation())
-        pressHome()
-        startActivityAndWait()
-        device.waitForIdle()
-    }
+    fun generate() =
+        baselineProfileRule.collect(packageName = "dev.vskelk.cdf") {
+            val device = UiDevice.getInstance(InstrumentationRegistry.getInstrumentation())
+            pressHome()
+            startActivityAndWait()
+            device.waitForIdle()
+        }
 }

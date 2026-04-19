@@ -18,9 +18,7 @@ import javax.annotation.processing.Generated;
     "rawtypes",
     "KotlinInternal",
     "KotlinInternalInJava",
-    "cast",
-    "deprecation",
-    "nullness:initialization.field.uninitialized"
+    "cast"
 })
 public final class EntrevistaViewModel_HiltModules_KeyModule_ProvideFactory implements Factory<Boolean> {
   @Override
@@ -37,6 +35,6 @@ public final class EntrevistaViewModel_HiltModules_KeyModule_ProvideFactory impl
   }
 
   private static final class InstanceHolder {
-    static final EntrevistaViewModel_HiltModules_KeyModule_ProvideFactory INSTANCE = new EntrevistaViewModel_HiltModules_KeyModule_ProvideFactory();
+    private static final EntrevistaViewModel_HiltModules_KeyModule_ProvideFactory INSTANCE = new EntrevistaViewModel_HiltModules_KeyModule_ProvideFactory();
   }
 }

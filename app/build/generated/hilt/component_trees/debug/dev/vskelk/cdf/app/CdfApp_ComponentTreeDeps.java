@@ -41,6 +41,8 @@ import hilt_aggregated_deps._dev_vskelk_cdf_app_CdfApp_GeneratedInjector;
 import hilt_aggregated_deps._dev_vskelk_cdf_app_MainActivity_GeneratedInjector;
 import hilt_aggregated_deps._dev_vskelk_cdf_app_di_AppBindingModule;
 import hilt_aggregated_deps._dev_vskelk_cdf_app_di_AppModule;
+import hilt_aggregated_deps._dev_vskelk_cdf_app_ui_SplashViewModel_HiltModules_BindsModule;
+import hilt_aggregated_deps._dev_vskelk_cdf_app_ui_SplashViewModel_HiltModules_KeyModule;
 import hilt_aggregated_deps._dev_vskelk_cdf_core_database_di_DatabaseModule;
 import hilt_aggregated_deps._dev_vskelk_cdf_core_datastore_di_DataStoreModule;
 import hilt_aggregated_deps._dev_vskelk_cdf_core_network_di_NetworkBindingModule;
@@ -53,6 +55,10 @@ import hilt_aggregated_deps._dev_vskelk_cdf_feature_diagnostico_DiagnosticoViewM
 import hilt_aggregated_deps._dev_vskelk_cdf_feature_diagnostico_DiagnosticoViewModel_HiltModules_KeyModule;
 import hilt_aggregated_deps._dev_vskelk_cdf_feature_entrevista_EntrevistaViewModel_HiltModules_BindsModule;
 import hilt_aggregated_deps._dev_vskelk_cdf_feature_entrevista_EntrevistaViewModel_HiltModules_KeyModule;
+import hilt_aggregated_deps._dev_vskelk_cdf_feature_investigador_CuarentenaViewModel_HiltModules_BindsModule;
+import hilt_aggregated_deps._dev_vskelk_cdf_feature_investigador_CuarentenaViewModel_HiltModules_KeyModule;
+import hilt_aggregated_deps._dev_vskelk_cdf_feature_investigador_InvestigadorViewModel_HiltModules_BindsModule;
+import hilt_aggregated_deps._dev_vskelk_cdf_feature_investigador_InvestigadorViewModel_HiltModules_KeyModule;
 import hilt_aggregated_deps._dev_vskelk_cdf_feature_main_MainViewModel_HiltModules_BindsModule;
 import hilt_aggregated_deps._dev_vskelk_cdf_feature_main_MainViewModel_HiltModules_KeyModule;
 import hilt_aggregated_deps._dev_vskelk_cdf_feature_simulador_SimuladorViewModel_HiltModules_BindsModule;
@@ -102,6 +108,8 @@ import hilt_aggregated_deps._dev_vskelk_cdf_feature_simulador_SimuladorViewModel
         _dev_vskelk_cdf_app_MainActivity_GeneratedInjector.class,
         _dev_vskelk_cdf_app_di_AppBindingModule.class,
         _dev_vskelk_cdf_app_di_AppModule.class,
+        _dev_vskelk_cdf_app_ui_SplashViewModel_HiltModules_BindsModule.class,
+        _dev_vskelk_cdf_app_ui_SplashViewModel_HiltModules_KeyModule.class,
         _dev_vskelk_cdf_core_database_di_DatabaseModule.class,
         _dev_vskelk_cdf_core_datastore_di_DataStoreModule.class,
         _dev_vskelk_cdf_core_network_di_NetworkBindingModule.class,
@@ -114,6 +122,10 @@ import hilt_aggregated_deps._dev_vskelk_cdf_feature_simulador_SimuladorViewModel
         _dev_vskelk_cdf_feature_diagnostico_DiagnosticoViewModel_HiltModules_KeyModule.class,
         _dev_vskelk_cdf_feature_entrevista_EntrevistaViewModel_HiltModules_BindsModule.class,
         _dev_vskelk_cdf_feature_entrevista_EntrevistaViewModel_HiltModules_KeyModule.class,
+        _dev_vskelk_cdf_feature_investigador_CuarentenaViewModel_HiltModules_BindsModule.class,
+        _dev_vskelk_cdf_feature_investigador_CuarentenaViewModel_HiltModules_KeyModule.class,
+        _dev_vskelk_cdf_feature_investigador_InvestigadorViewModel_HiltModules_BindsModule.class,
+        _dev_vskelk_cdf_feature_investigador_InvestigadorViewModel_HiltModules_KeyModule.class,
         _dev_vskelk_cdf_feature_main_MainViewModel_HiltModules_BindsModule.class,
         _dev_vskelk_cdf_feature_main_MainViewModel_HiltModules_KeyModule.class,
         _dev_vskelk_cdf_feature_simulador_SimuladorViewModel_HiltModules_BindsModule.class,

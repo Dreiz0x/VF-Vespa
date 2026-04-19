@@ -1,2 +1,0 @@
--keep,allowobfuscation,allowshrinking class dev.vskelk.cdf.feature.entrevista.EntrevistaViewModel
--keep,allowobfuscation,allowshrinking class dev.vskelk.cdf.feature.entrevista.EntrevistaViewModel

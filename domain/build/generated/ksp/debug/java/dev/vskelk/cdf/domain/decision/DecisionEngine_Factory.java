@@ -18,9 +18,7 @@ import javax.annotation.processing.Generated;
     "rawtypes",
     "KotlinInternal",
     "KotlinInternalInJava",
-    "cast",
-    "deprecation",
-    "nullness:initialization.field.uninitialized"
+    "cast"
 })
 public final class DecisionEngine_Factory implements Factory<DecisionEngine> {
   @Override
@@ -37,6 +35,6 @@ public final class DecisionEngine_Factory implements Factory<DecisionEngine> {
   }
 
   private static final class InstanceHolder {
-    static final DecisionEngine_Factory INSTANCE = new DecisionEngine_Factory();
+    private static final DecisionEngine_Factory INSTANCE = new DecisionEngine_Factory();
   }
 }

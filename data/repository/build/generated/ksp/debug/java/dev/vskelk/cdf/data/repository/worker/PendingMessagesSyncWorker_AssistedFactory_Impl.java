@@ -17,9 +17,7 @@ import javax.inject.Provider;
     "rawtypes",
     "KotlinInternal",
     "KotlinInternalInJava",
-    "cast",
-    "deprecation",
-    "nullness:initialization.field.uninitialized"
+    "cast"
 })
 public final class PendingMessagesSyncWorker_AssistedFactory_Impl implements PendingMessagesSyncWorker_AssistedFactory {
   private final PendingMessagesSyncWorker_Factory delegateFactory;

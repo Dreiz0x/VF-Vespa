@@ -18,9 +18,7 @@ import javax.annotation.processing.Generated;
     "rawtypes",
     "KotlinInternal",
     "KotlinInternalInJava",
-    "cast",
-    "deprecation",
-    "nullness:initialization.field.uninitialized"
+    "cast"
 })
 public final class CircuitBreaker_Factory implements Factory<CircuitBreaker> {
   @Override
@@ -37,6 +35,6 @@ public final class CircuitBreaker_Factory implements Factory<CircuitBreaker> {
   }
 
   private static final class InstanceHolder {
-    static final CircuitBreaker_Factory INSTANCE = new CircuitBreaker_Factory();
+    private static final CircuitBreaker_Factory INSTANCE = new CircuitBreaker_Factory();
   }
 }

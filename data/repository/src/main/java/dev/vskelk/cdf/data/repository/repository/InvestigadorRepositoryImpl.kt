@@ -35,7 +35,7 @@ class InvestigadorRepositoryImpl @Inject constructor(
     override suspend fun investigar(solicitud: SolicitudInvestigacion): ResultadoInvestigacion {
         val contextoExistente = normativeDao.searchByKeyword(solicitud.tema)
             .take(3)
-            .joinToString("\n") { it.content }
+            .joinToString("\n") { it.body }
 
         // ── Paso 2: formular prompt de extracción estructurada ───────────────
         val prompt = buildExtractionPrompt(solicitud.tema, contextoExistente)
@@ -104,8 +104,8 @@ class InvestigadorRepositoryImpl @Inject constructor(
     ): List<FragmentoCuarentena> = fragmentos.map { fragmento ->
         val existentes = normativeDao.searchByKeyword(fragmento.fuente)
         val conflicto = existentes.firstOrNull { existente ->
-            existente.content.contains(fragmento.fuente, ignoreCase = true) &&
-                !existente.content.contains(
+            existente.body.contains(fragmento.fuente, ignoreCase = true) &&
+                !existente.body.contains(
                     fragmento.contenido.take(40),
                     ignoreCase = true
                 )
@@ -114,7 +114,7 @@ class InvestigadorRepositoryImpl @Inject constructor(
             fragmento.copy(
                 estado = CuarentenaEstado.CONFLICTO,
                 conflictoConId = conflicto.id,
-                conflictoDescripcion = "Contradice fragmento existente: ${conflicto.content.take(80)}...",
+                conflictoDescripcion = "Contradice fragmento existente: ${conflicto.body.take(80)}...",
             )
         } else {
             fragmento

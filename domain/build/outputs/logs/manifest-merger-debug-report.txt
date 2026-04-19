@@ -1,16 +1,16 @@
 -- Merging decision tree log ---
 manifest
-ADDED from /home/ubuntu/vespa_new/Vespa/domain/build/intermediates/tmp/ProcessLibraryManifest/debug/tempAndroidManifest10196181071604712780.xml:2:13-83
-INJECTED from /home/ubuntu/vespa_new/Vespa/domain/build/intermediates/tmp/ProcessLibraryManifest/debug/tempAndroidManifest10196181071604712780.xml:2:13-83
+ADDED from /workspace/Vespa/domain/build/intermediates/tmp/ProcessLibraryManifest/debug/tempAndroidManifest15817820492014422788.xml:2:13-83
+INJECTED from /workspace/Vespa/domain/build/intermediates/tmp/ProcessLibraryManifest/debug/tempAndroidManifest15817820492014422788.xml:2:13-83
 	package
-		INJECTED from /home/ubuntu/vespa_new/Vespa/domain/build/intermediates/tmp/ProcessLibraryManifest/debug/tempAndroidManifest10196181071604712780.xml
+		INJECTED from /workspace/Vespa/domain/build/intermediates/tmp/ProcessLibraryManifest/debug/tempAndroidManifest15817820492014422788.xml
 	xmlns:android
-		ADDED from /home/ubuntu/vespa_new/Vespa/domain/build/intermediates/tmp/ProcessLibraryManifest/debug/tempAndroidManifest10196181071604712780.xml:2:23-81
+		ADDED from /workspace/Vespa/domain/build/intermediates/tmp/ProcessLibraryManifest/debug/tempAndroidManifest15817820492014422788.xml:2:23-81
 uses-sdk
-INJECTED from /home/ubuntu/vespa_new/Vespa/domain/build/intermediates/tmp/ProcessLibraryManifest/debug/tempAndroidManifest10196181071604712780.xml reason: use-sdk injection requested
-INJECTED from /home/ubuntu/vespa_new/Vespa/domain/build/intermediates/tmp/ProcessLibraryManifest/debug/tempAndroidManifest10196181071604712780.xml
-INJECTED from /home/ubuntu/vespa_new/Vespa/domain/build/intermediates/tmp/ProcessLibraryManifest/debug/tempAndroidManifest10196181071604712780.xml
+INJECTED from /workspace/Vespa/domain/build/intermediates/tmp/ProcessLibraryManifest/debug/tempAndroidManifest15817820492014422788.xml reason: use-sdk injection requested
+INJECTED from /workspace/Vespa/domain/build/intermediates/tmp/ProcessLibraryManifest/debug/tempAndroidManifest15817820492014422788.xml
+INJECTED from /workspace/Vespa/domain/build/intermediates/tmp/ProcessLibraryManifest/debug/tempAndroidManifest15817820492014422788.xml
 	android:targetSdkVersion
-		INJECTED from /home/ubuntu/vespa_new/Vespa/domain/build/intermediates/tmp/ProcessLibraryManifest/debug/tempAndroidManifest10196181071604712780.xml
+		INJECTED from /workspace/Vespa/domain/build/intermediates/tmp/ProcessLibraryManifest/debug/tempAndroidManifest15817820492014422788.xml
 	android:minSdkVersion
-		INJECTED from /home/ubuntu/vespa_new/Vespa/domain/build/intermediates/tmp/ProcessLibraryManifest/debug/tempAndroidManifest10196181071604712780.xml
+		INJECTED from /workspace/Vespa/domain/build/intermediates/tmp/ProcessLibraryManifest/debug/tempAndroidManifest15817820492014422788.xml

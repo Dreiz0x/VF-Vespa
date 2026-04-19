@@ -18,9 +18,7 @@ import javax.annotation.processing.Generated;
     "rawtypes",
     "KotlinInternal",
     "KotlinInternalInJava",
-    "cast",
-    "deprecation",
-    "nullness:initialization.field.uninitialized"
+    "cast"
 })
 public final class DefaultAppDispatchers_Factory implements Factory<DefaultAppDispatchers> {
   @Override
@@ -37,6 +35,6 @@ public final class DefaultAppDispatchers_Factory implements Factory<DefaultAppDi
   }
 
   private static final class InstanceHolder {
-    static final DefaultAppDispatchers_Factory INSTANCE = new DefaultAppDispatchers_Factory();
+    private static final DefaultAppDispatchers_Factory INSTANCE = new DefaultAppDispatchers_Factory();
   }
 }

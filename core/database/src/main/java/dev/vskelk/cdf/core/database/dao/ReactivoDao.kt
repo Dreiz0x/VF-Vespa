@@ -66,6 +66,9 @@ interface ReactivoDao {
     )
     fun observeActiveReactivos(examArea: String?): Flow<List<ReactivoAggregate>>
 
+    @Query("SELECT * FROM reactivos")
+    fun observeAllReactivos(): Flow<List<ReactivoEntity>>
+
     @Transaction
     @Query(
         """

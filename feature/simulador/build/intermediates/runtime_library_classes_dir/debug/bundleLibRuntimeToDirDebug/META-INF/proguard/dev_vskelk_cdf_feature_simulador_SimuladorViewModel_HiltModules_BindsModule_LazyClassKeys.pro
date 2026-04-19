@@ -1,1 +1,0 @@
--keep,allowobfuscation,allowshrinking class dev.vskelk.cdf.feature.simulador.SimuladorViewModel

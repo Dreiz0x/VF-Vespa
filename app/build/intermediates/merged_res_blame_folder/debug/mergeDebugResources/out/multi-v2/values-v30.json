@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "dev.vskelk.cdf.app-mergeDebugResources-77:/values-v30/values-v30.xml",
+            "outputFile": "dev.vskelk.cdf.app-mergeDebugResources-69:/values-v30/values-v30.xml",
             "map": [
                 {
-                    "source": "/home/ubuntu/.gradle/caches/8.10.2/transforms/0a151d3e723e84187199ac9b4547a94f/transformed/material3-release/res/values-v30/values-v30.xml",
+                    "source": "/home/minimax/.gradle/caches/8.10.2/transforms/c974b5e0c0e8d8ac58766a0a35dcd221/transformed/material3-release/res/values-v30/values-v30.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",

@@ -2,7 +2,6 @@ package dev.vskelk.cdf.domain.usecase;
 
 import dagger.internal.DaggerGenerated;
 import dagger.internal.Factory;
-import dagger.internal.Provider;
 import dagger.internal.QualifierMetadata;
 import dagger.internal.ScopeMetadata;
 import dev.vskelk.cdf.domain.decision.DecisionEngine;
@@ -10,6 +9,7 @@ import dev.vskelk.cdf.domain.repository.ChaosRepository;
 import dev.vskelk.cdf.domain.repository.ConversationRepository;
 import dev.vskelk.cdf.domain.repository.SettingsRepository;
 import javax.annotation.processing.Generated;
+import javax.inject.Provider;
 
 @ScopeMetadata
 @QualifierMetadata
@@ -23,9 +23,7 @@ import javax.annotation.processing.Generated;
     "rawtypes",
     "KotlinInternal",
     "KotlinInternalInJava",
-    "cast",
-    "deprecation",
-    "nullness:initialization.field.uninitialized"
+    "cast"
 })
 public final class SendMessageUseCase_Factory implements Factory<SendMessageUseCase> {
   private final Provider<ConversationRepository> conversationRepositoryProvider;

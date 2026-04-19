@@ -3,11 +3,11 @@ package dev.vskelk.cdf.core.network.di;
 import dagger.internal.DaggerGenerated;
 import dagger.internal.Factory;
 import dagger.internal.Preconditions;
-import dagger.internal.Provider;
 import dagger.internal.QualifierMetadata;
 import dagger.internal.ScopeMetadata;
 import dev.vskelk.cdf.core.network.security.CertificatePinsProvider;
 import javax.annotation.processing.Generated;
+import javax.inject.Provider;
 import okhttp3.CertificatePinner;
 
 @ScopeMetadata("javax.inject.Singleton")
@@ -22,9 +22,7 @@ import okhttp3.CertificatePinner;
     "rawtypes",
     "KotlinInternal",
     "KotlinInternalInJava",
-    "cast",
-    "deprecation",
-    "nullness:initialization.field.uninitialized"
+    "cast"
 })
 public final class NetworkModule_ProvideCertificatePinnerFactory implements Factory<CertificatePinner> {
   private final Provider<CertificatePinsProvider> pinsProvider;

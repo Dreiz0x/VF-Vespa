@@ -10,6 +10,11 @@ android {
     namespace = "dev.vskelk.cdf.core.datastore"
     compileSdk = 35
     defaultConfig { minSdk = 26 }
+    sourceSets {
+        getByName("debug") {
+            java.srcDir("build/generated/source/proto/debug/java")
+        }
+    }
 }
 
 androidComponents {

@@ -18,9 +18,7 @@ import javax.annotation.processing.Generated;
     "rawtypes",
     "KotlinInternal",
     "KotlinInternalInJava",
-    "cast",
-    "deprecation",
-    "nullness:initialization.field.uninitialized"
+    "cast"
 })
 public final class DebugLoggingInterceptorFactory_Factory implements Factory<DebugLoggingInterceptorFactory> {
   @Override
@@ -37,6 +35,6 @@ public final class DebugLoggingInterceptorFactory_Factory implements Factory<Deb
   }
 
   private static final class InstanceHolder {
-    static final DebugLoggingInterceptorFactory_Factory INSTANCE = new DebugLoggingInterceptorFactory_Factory();
+    private static final DebugLoggingInterceptorFactory_Factory INSTANCE = new DebugLoggingInterceptorFactory_Factory();
   }
 }

@@ -155,13 +155,6 @@
             </intent-filter>
         </receiver>
 
-        <uses-library
-            android:name="androidx.window.extensions"
-            android:required="false" />
-        <uses-library
-            android:name="androidx.window.sidecar"
-            android:required="false" />
-
         <service
             android:name="androidx.room.MultiInstanceInvalidationService"
             android:directBootAware="true"

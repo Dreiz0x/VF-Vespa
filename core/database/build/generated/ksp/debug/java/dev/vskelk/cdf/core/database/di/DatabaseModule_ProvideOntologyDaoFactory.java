@@ -3,12 +3,12 @@ package dev.vskelk.cdf.core.database.di;
 import dagger.internal.DaggerGenerated;
 import dagger.internal.Factory;
 import dagger.internal.Preconditions;
-import dagger.internal.Provider;
 import dagger.internal.QualifierMetadata;
 import dagger.internal.ScopeMetadata;
 import dev.vskelk.cdf.core.database.AppDatabase;
 import dev.vskelk.cdf.core.database.dao.OntologyDao;
 import javax.annotation.processing.Generated;
+import javax.inject.Provider;
 
 @ScopeMetadata
 @QualifierMetadata
@@ -22,9 +22,7 @@ import javax.annotation.processing.Generated;
     "rawtypes",
     "KotlinInternal",
     "KotlinInternalInJava",
-    "cast",
-    "deprecation",
-    "nullness:initialization.field.uninitialized"
+    "cast"
 })
 public final class DatabaseModule_ProvideOntologyDaoFactory implements Factory<OntologyDao> {
   private final Provider<AppDatabase> dbProvider;

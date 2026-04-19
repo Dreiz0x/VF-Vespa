@@ -61,9 +61,9 @@ class DatabaseSeeder @Inject constructor(
         )
 
         db.reactivoDao().upsertOptions(listOf(
-            ReactivoOptionEntity(reactivoId = reactivo1Id, position = 1, label = "A", text = "Observación", isCorrect = true, rationale = "La observación es el inicio."),
-            ReactivoOptionEntity(reactivoId = reactivo1Id, position = 2, label = "B", text = "Hipótesis", isCorrect = false, rationale = "Viene después."),
-            ReactivoOptionEntity(reactivoId = reactivo1Id, position = 3, label = "C", text = "Experimentación", isCorrect = false, rationale = "Es un paso intermedio.")
+            ReactivoOptionEntity(reactivoId = reactivo1Id, position = 1, label = "A", text = "Observación", isCorrect = true, distractorType = null, rationale = "La observación es el inicio."),
+            ReactivoOptionEntity(reactivoId = reactivo1Id, position = 2, label = "B", text = "Hipótesis", isCorrect = false, distractorType = null, rationale = "Viene después."),
+            ReactivoOptionEntity(reactivoId = reactivo1Id, position = 3, label = "C", text = "Experimentación", isCorrect = false, distractorType = null, rationale = "Es un paso intermedio.")
         ))
 
         db.reactivoDao().upsertMetadata(
@@ -73,6 +73,10 @@ class DatabaseSeeder @Inject constructor(
                 discrimination = 0.5,
                 estimatedTimeSec = 60,
                 reviewState = "APPROVED",
+                reviewerNotes = null,
+                commonErrorPattern = null,
+                blueprintWeight = null,
+                lastReviewedAt = null,
                 createdAt = now
             )
         )

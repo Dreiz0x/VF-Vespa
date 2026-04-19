@@ -3,11 +3,11 @@ package dev.vskelk.cdf.core.network.di;
 import dagger.internal.DaggerGenerated;
 import dagger.internal.Factory;
 import dagger.internal.Preconditions;
-import dagger.internal.Provider;
 import dagger.internal.QualifierMetadata;
 import dagger.internal.ScopeMetadata;
 import dev.vskelk.cdf.core.network.api.AnthropicApi;
 import javax.annotation.processing.Generated;
+import javax.inject.Provider;
 import kotlinx.serialization.json.Json;
 import okhttp3.OkHttpClient;
 
@@ -23,9 +23,7 @@ import okhttp3.OkHttpClient;
     "rawtypes",
     "KotlinInternal",
     "KotlinInternalInJava",
-    "cast",
-    "deprecation",
-    "nullness:initialization.field.uninitialized"
+    "cast"
 })
 public final class NetworkModule_ProvideAnthropicApiFactory implements Factory<AnthropicApi> {
   private final Provider<OkHttpClient> clientProvider;

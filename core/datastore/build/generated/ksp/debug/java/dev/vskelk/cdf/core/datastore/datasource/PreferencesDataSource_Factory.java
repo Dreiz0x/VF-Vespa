@@ -3,12 +3,12 @@ package dev.vskelk.cdf.core.datastore.datasource;
 import androidx.datastore.core.DataStore;
 import dagger.internal.DaggerGenerated;
 import dagger.internal.Factory;
-import dagger.internal.Provider;
 import dagger.internal.QualifierMetadata;
 import dagger.internal.ScopeMetadata;
 import dev.vskelk.cdf.core.datastore.UserPreferences;
 import dev.vskelk.cdf.core.datastore.crypto.CipherService;
 import javax.annotation.processing.Generated;
+import javax.inject.Provider;
 
 @ScopeMetadata("javax.inject.Singleton")
 @QualifierMetadata
@@ -22,9 +22,7 @@ import javax.annotation.processing.Generated;
     "rawtypes",
     "KotlinInternal",
     "KotlinInternalInJava",
-    "cast",
-    "deprecation",
-    "nullness:initialization.field.uninitialized"
+    "cast"
 })
 public final class PreferencesDataSource_Factory implements Factory<PreferencesDataSource> {
   private final Provider<DataStore<UserPreferences>> dataStoreProvider;

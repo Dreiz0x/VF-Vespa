@@ -47,6 +47,7 @@ import dagger.hilt.internal.GeneratedComponent;
 import dagger.hilt.migration.DisableInstallInCheck;
 import dev.vskelk.cdf.app.di.AppBindingModule;
 import dev.vskelk.cdf.app.di.AppModule;
+import dev.vskelk.cdf.app.ui.SplashViewModel_HiltModules;
 import dev.vskelk.cdf.core.database.di.DatabaseModule;
 import dev.vskelk.cdf.core.datastore.di.DataStoreModule;
 import dev.vskelk.cdf.core.network.di.NetworkBindingModule;
@@ -56,6 +57,8 @@ import dev.vskelk.cdf.data.repository.worker.PendingMessagesSyncWorker_HiltModul
 import dev.vskelk.cdf.feature.chaos.ChaosViewModel_HiltModules;
 import dev.vskelk.cdf.feature.diagnostico.DiagnosticoViewModel_HiltModules;
 import dev.vskelk.cdf.feature.entrevista.EntrevistaViewModel_HiltModules;
+import dev.vskelk.cdf.feature.investigador.CuarentenaViewModel_HiltModules;
+import dev.vskelk.cdf.feature.investigador.InvestigadorViewModel_HiltModules;
 import dev.vskelk.cdf.feature.main.MainViewModel_HiltModules;
 import dev.vskelk.cdf.feature.simulador.SimuladorViewModel_HiltModules;
 import javax.annotation.processing.Generated;
@@ -176,12 +179,15 @@ public final class CdfApp_HiltComponents {
           ActivityCBuilderModule.class,
           ViewModelCBuilderModule.class,
           ChaosViewModel_HiltModules.KeyModule.class,
+          CuarentenaViewModel_HiltModules.KeyModule.class,
           DiagnosticoViewModel_HiltModules.KeyModule.class,
           EntrevistaViewModel_HiltModules.KeyModule.class,
           HiltWrapper_ActivityRetainedComponentManager_LifecycleModule.class,
           HiltWrapper_SavedStateHandleModule.class,
+          InvestigadorViewModel_HiltModules.KeyModule.class,
           MainViewModel_HiltModules.KeyModule.class,
-          SimuladorViewModel_HiltModules.KeyModule.class
+          SimuladorViewModel_HiltModules.KeyModule.class,
+          SplashViewModel_HiltModules.KeyModule.class
       }
   )
   @ActivityRetainedScoped
@@ -218,11 +224,14 @@ public final class CdfApp_HiltComponents {
   @Subcomponent(
       modules = {
           ChaosViewModel_HiltModules.BindsModule.class,
+          CuarentenaViewModel_HiltModules.BindsModule.class,
           DiagnosticoViewModel_HiltModules.BindsModule.class,
           EntrevistaViewModel_HiltModules.BindsModule.class,
           HiltWrapper_HiltViewModelFactory_ViewModelModule.class,
+          InvestigadorViewModel_HiltModules.BindsModule.class,
           MainViewModel_HiltModules.BindsModule.class,
-          SimuladorViewModel_HiltModules.BindsModule.class
+          SimuladorViewModel_HiltModules.BindsModule.class,
+          SplashViewModel_HiltModules.BindsModule.class
       }
   )
   @ViewModelScoped

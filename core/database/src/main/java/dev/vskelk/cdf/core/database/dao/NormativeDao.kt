@@ -15,6 +15,19 @@ interface NormativeDao {
     @Query("SELECT * FROM norm_sources ORDER BY title ASC")
     fun observeSources(): Flow<List<NormSourceEntity>>
 
+    @Query("SELECT * FROM norm_sources ORDER BY title ASC")
+    fun observeAllSources(): Flow<List<NormSourceEntity>>
+
+    @Query("""
+        SELECT nf.* FROM norm_fragments nf
+        INNER JOIN norm_versions nv ON nv.id = nf.versionId
+        WHERE nv.isCurrent = 1
+          AND (nf.normalizedBody LIKE '%' || :keyword || '%'
+               OR nf.heading LIKE '%' || :keyword || '%')
+        LIMIT :limit
+    """)
+    suspend fun searchByKeyword(keyword: String, limit: Int = 10): List<NormFragmentEntity>
+
     @Query("""
         SELECT nf.* FROM norm_fragments nf
         INNER JOIN norm_versions nv ON nv.id = nf.versionId

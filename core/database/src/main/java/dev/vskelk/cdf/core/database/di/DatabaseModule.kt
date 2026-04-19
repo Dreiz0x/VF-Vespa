@@ -24,7 +24,7 @@ object DatabaseModule {
     @Singleton
     fun provideDb(@ApplicationContext context: Context): AppDatabase =
         Room.databaseBuilder(context, AppDatabase::class.java, "vespa.db")
-            .fallbackToDestructiveMigration(true)
+            .fallbackToDestructiveMigration()
             .build()
 
     @Provides fun provideMessageDao(db: AppDatabase): MessageDao = db.messageDao()

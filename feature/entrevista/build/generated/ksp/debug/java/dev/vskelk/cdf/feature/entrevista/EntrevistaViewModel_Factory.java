@@ -2,11 +2,11 @@ package dev.vskelk.cdf.feature.entrevista;
 
 import dagger.internal.DaggerGenerated;
 import dagger.internal.Factory;
-import dagger.internal.Provider;
 import dagger.internal.QualifierMetadata;
 import dagger.internal.ScopeMetadata;
 import dev.vskelk.cdf.domain.usecase.ObserveInterviewNodesUseCase;
 import javax.annotation.processing.Generated;
+import javax.inject.Provider;
 
 @ScopeMetadata
 @QualifierMetadata
@@ -20,9 +20,7 @@ import javax.annotation.processing.Generated;
     "rawtypes",
     "KotlinInternal",
     "KotlinInternalInJava",
-    "cast",
-    "deprecation",
-    "nullness:initialization.field.uninitialized"
+    "cast"
 })
 public final class EntrevistaViewModel_Factory implements Factory<EntrevistaViewModel> {
   private final Provider<ObserveInterviewNodesUseCase> observeInterviewNodesUseCaseProvider;

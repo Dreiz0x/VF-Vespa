@@ -18,9 +18,7 @@ import javax.annotation.processing.Generated;
     "rawtypes",
     "KotlinInternal",
     "KotlinInternalInJava",
-    "cast",
-    "deprecation",
-    "nullness:initialization.field.uninitialized"
+    "cast"
 })
 public final class AuthInterceptor_Factory implements Factory<AuthInterceptor> {
   @Override
@@ -37,6 +35,6 @@ public final class AuthInterceptor_Factory implements Factory<AuthInterceptor> {
   }
 
   private static final class InstanceHolder {
-    static final AuthInterceptor_Factory INSTANCE = new AuthInterceptor_Factory();
+    private static final AuthInterceptor_Factory INSTANCE = new AuthInterceptor_Factory();
   }
 }

@@ -2,12 +2,12 @@ package dev.vskelk.cdf.feature.chaos;
 
 import dagger.internal.DaggerGenerated;
 import dagger.internal.Factory;
-import dagger.internal.Provider;
 import dagger.internal.QualifierMetadata;
 import dagger.internal.ScopeMetadata;
 import dev.vskelk.cdf.domain.usecase.ObserveChaosStatusUseCase;
 import dev.vskelk.cdf.domain.usecase.RefreshChaosStatusUseCase;
 import javax.annotation.processing.Generated;
+import javax.inject.Provider;
 
 @ScopeMetadata
 @QualifierMetadata
@@ -21,9 +21,7 @@ import javax.annotation.processing.Generated;
     "rawtypes",
     "KotlinInternal",
     "KotlinInternalInJava",
-    "cast",
-    "deprecation",
-    "nullness:initialization.field.uninitialized"
+    "cast"
 })
 public final class ChaosViewModel_Factory implements Factory<ChaosViewModel> {
   private final Provider<ObserveChaosStatusUseCase> observeChaosStatusUseCaseProvider;

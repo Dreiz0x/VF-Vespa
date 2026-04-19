@@ -2,7 +2,6 @@ package dev.vskelk.cdf.feature.main;
 
 import dagger.internal.DaggerGenerated;
 import dagger.internal.Factory;
-import dagger.internal.Provider;
 import dagger.internal.QualifierMetadata;
 import dagger.internal.ScopeMetadata;
 import dev.vskelk.cdf.domain.usecase.ObserveConversationUseCase;
@@ -11,6 +10,7 @@ import dev.vskelk.cdf.domain.usecase.SaveApiKeyUseCase;
 import dev.vskelk.cdf.domain.usecase.SendMessageUseCase;
 import dev.vskelk.cdf.domain.usecase.ToggleOfflineModeUseCase;
 import javax.annotation.processing.Generated;
+import javax.inject.Provider;
 
 @ScopeMetadata
 @QualifierMetadata
@@ -24,9 +24,7 @@ import javax.annotation.processing.Generated;
     "rawtypes",
     "KotlinInternal",
     "KotlinInternalInJava",
-    "cast",
-    "deprecation",
-    "nullness:initialization.field.uninitialized"
+    "cast"
 })
 public final class MainViewModel_Factory implements Factory<MainViewModel> {
   private final Provider<ObserveConversationUseCase> observeConversationUseCaseProvider;

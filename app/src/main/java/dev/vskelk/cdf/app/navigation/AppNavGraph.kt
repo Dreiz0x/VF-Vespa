@@ -28,17 +28,16 @@ fun AppNavGraph(navController: NavHostController) {
         navController = navController,
         startDestination = Routes.Splash,
     ) {
-        composable<Routes.Splash> {
+        composable(Routes.Splash) {
             VespaSplashScreen(
                 onStart = {
-                    navController.navigate(Routes.Main) {
-                        popUpTo(Routes.Splash) { inclusive = true }
-                    }
+                    navController.navigate(Routes.Main)
+                    navController.popBackStack()
                 }
             )
         }
 
-        composable<Routes.Main> {
+        composable(Routes.Main) {
             val viewModel: MainViewModel = hiltViewModel()
             MainScreen(
                 viewModel = viewModel,
@@ -50,36 +49,36 @@ fun AppNavGraph(navController: NavHostController) {
             )
         }
 
-        composable<Routes.Chaos> {
+        composable(Routes.Chaos) {
             val viewModel: ChaosViewModel = hiltViewModel()
             ChaosScreen(viewModel = viewModel, onBack = { navController.popBackStack() })
         }
 
-        composable<Routes.Simulador> {
+        composable(Routes.Simulador) {
             val viewModel: SimuladorViewModel = hiltViewModel()
             SimuladorScreen(viewModel = viewModel, onBack = { navController.popBackStack() })
         }
 
-        composable<Routes.Diagnostico> {
+        composable(Routes.Diagnostico) {
             val viewModel: DiagnosticoViewModel = hiltViewModel()
             DiagnosticoScreen(viewModel = viewModel, onBack = { navController.popBackStack() })
         }
 
-        composable<Routes.Entrevista> {
+        composable(Routes.Entrevista) {
             val viewModel: EntrevistaViewModel = hiltViewModel()
             EntrevistaScreen(viewModel = viewModel, onBack = { navController.popBackStack() })
         }
 
-        composable<Routes.Investigador> {
+        composable(Routes.Investigador) {
             val viewModel: InvestigadorViewModel = hiltViewModel()
             InvestigadorScreen(
                 viewModel = viewModel,
                 onBack = { navController.popBackStack() },
-                onOpenCuarentena = { navController.navigate(Routes.Cuarentena) }
+                onVerCuarentena = { navController.navigate(Routes.Cuarentena) }
             )
         }
 
-        composable<Routes.Cuarentena> {
+        composable(Routes.Cuarentena) {
             val viewModel: CuarentenaViewModel = hiltViewModel()
             CuarentenaScreen(
                 viewModel = viewModel,

@@ -18,9 +18,7 @@ import javax.annotation.processing.Generated;
     "rawtypes",
     "KotlinInternal",
     "KotlinInternalInJava",
-    "cast",
-    "deprecation",
-    "nullness:initialization.field.uninitialized"
+    "cast"
 })
 public final class ChaosViewModel_HiltModules_KeyModule_ProvideFactory implements Factory<Boolean> {
   @Override
@@ -37,6 +35,6 @@ public final class ChaosViewModel_HiltModules_KeyModule_ProvideFactory implement
   }
 
   private static final class InstanceHolder {
-    static final ChaosViewModel_HiltModules_KeyModule_ProvideFactory INSTANCE = new ChaosViewModel_HiltModules_KeyModule_ProvideFactory();
+    private static final ChaosViewModel_HiltModules_KeyModule_ProvideFactory INSTANCE = new ChaosViewModel_HiltModules_KeyModule_ProvideFactory();
   }
 }

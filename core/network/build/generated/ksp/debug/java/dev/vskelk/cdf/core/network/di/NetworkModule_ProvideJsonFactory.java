@@ -20,9 +20,7 @@ import kotlinx.serialization.json.Json;
     "rawtypes",
     "KotlinInternal",
     "KotlinInternalInJava",
-    "cast",
-    "deprecation",
-    "nullness:initialization.field.uninitialized"
+    "cast"
 })
 public final class NetworkModule_ProvideJsonFactory implements Factory<Json> {
   @Override
@@ -39,6 +37,6 @@ public final class NetworkModule_ProvideJsonFactory implements Factory<Json> {
   }
 
   private static final class InstanceHolder {
-    static final NetworkModule_ProvideJsonFactory INSTANCE = new NetworkModule_ProvideJsonFactory();
+    private static final NetworkModule_ProvideJsonFactory INSTANCE = new NetworkModule_ProvideJsonFactory();
   }
 }

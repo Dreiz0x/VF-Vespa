@@ -4,9 +4,9 @@ import androidx.hilt.work.HiltWorkerFactory;
 import dagger.MembersInjector;
 import dagger.internal.DaggerGenerated;
 import dagger.internal.InjectedFieldSignature;
-import dagger.internal.Provider;
 import dagger.internal.QualifierMetadata;
 import javax.annotation.processing.Generated;
+import javax.inject.Provider;
 
 @QualifierMetadata
 @DaggerGenerated
@@ -19,9 +19,7 @@ import javax.annotation.processing.Generated;
     "rawtypes",
     "KotlinInternal",
     "KotlinInternalInJava",
-    "cast",
-    "deprecation",
-    "nullness:initialization.field.uninitialized"
+    "cast"
 })
 public final class CdfApp_MembersInjector implements MembersInjector<CdfApp> {
   private final Provider<HiltWorkerFactory> workerFactoryProvider;

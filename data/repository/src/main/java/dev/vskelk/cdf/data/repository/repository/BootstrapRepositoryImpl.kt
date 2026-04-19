@@ -11,6 +11,7 @@ import dev.vskelk.cdf.domain.model.SeedManifest
 import dev.vskelk.cdf.domain.repository.BootstrapRepository
 import kotlinx.coroutines.flow.Flow
 import kotlinx.coroutines.flow.MutableStateFlow
+import kotlinx.coroutines.flow.first
 import kotlinx.serialization.json.Json
 import kotlinx.serialization.json.jsonObject
 import kotlinx.serialization.json.jsonPrimitive
@@ -39,11 +40,14 @@ class BootstrapRepositoryImpl @Inject constructor(
                 .bufferedReader().readText()
             val manifest = parseManifest(manifestRaw)
 
-            val appliedVersion = preferencesDataSource.getSeedVersion()
+            val appliedVersion = preferencesDataSource.observeSeedVersionApplied().first()
+
+            val normCount = normativeDao.observeAllSources().first().size
+            val reactCount = reactivoDao.observeAllReactivos().first().size
 
             val needsSeed = appliedVersion != manifest.version ||
-                normativeDao.count() < manifest.minNormativa ||
-                reactivoDao.count() < manifest.minReactivos
+                normCount < manifest.minNormativa ||
+                reactCount < manifest.minReactivos
 
             if (needsSeed) {
                 _state.value = BootstrapState.Seeding("Verificando base de datos...")
@@ -55,7 +59,7 @@ class BootstrapRepositoryImpl @Inject constructor(
                 _state.value = BootstrapState.Seeding("Preparando reactivos...")
                 seedReactivos(manifest)
 
-                preferencesDataSource.setSeedVersion(manifest.version)
+                preferencesDataSource.setSeedVersionApplied(manifest.version)
             }
 
             _state.value = BootstrapState.Ready

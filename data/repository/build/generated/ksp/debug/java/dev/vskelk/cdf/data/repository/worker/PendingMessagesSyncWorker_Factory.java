@@ -3,11 +3,11 @@ package dev.vskelk.cdf.data.repository.worker;
 import android.content.Context;
 import androidx.work.WorkerParameters;
 import dagger.internal.DaggerGenerated;
-import dagger.internal.Provider;
 import dagger.internal.QualifierMetadata;
 import dagger.internal.ScopeMetadata;
 import dev.vskelk.cdf.domain.usecase.SyncPendingMessagesUseCase;
 import javax.annotation.processing.Generated;
+import javax.inject.Provider;
 
 @ScopeMetadata
 @QualifierMetadata
@@ -21,9 +21,7 @@ import javax.annotation.processing.Generated;
     "rawtypes",
     "KotlinInternal",
     "KotlinInternalInJava",
-    "cast",
-    "deprecation",
-    "nullness:initialization.field.uninitialized"
+    "cast"
 })
 public final class PendingMessagesSyncWorker_Factory {
   private final Provider<SyncPendingMessagesUseCase> syncPendingMessagesUseCaseProvider;
